@@ -7,15 +7,16 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
+import BillCard from "./BillCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    maxWidth: 360,
+    maxWidth: 460,
     backgroundColor: theme.palette.background.paper,
     position: 'relative',
     overflow: 'auto',
-    maxHeight: 300,
+    maxHeight: 500,
   },
   listSection: {
     backgroundColor: 'inherit',
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 //Note that the array of integers should be replaced with an array of Bill Cards
 //Also note that the 0 and/or  List Header field key should be replaced with an actual header of some sort.
-export default function PinnedSubheaderList() {
+export default function BillList() {
   const classes = useStyles();
 
   return (
@@ -35,10 +36,10 @@ export default function PinnedSubheaderList() {
 
         <li key={`section-${0}`} className={classes.listSection}>
           <ul className={classes.ul}>
-            <ListSubheader>{`I'm sticky ${0}`}</ListSubheader>
+            <ListSubheader>{`Bills`}</ListSubheader>
             {[0, 1, 2].map((item) => (
               <ListItem key={`item-${0}-${item}`}>
-                <ListItemText primary={`Item ${item}`} />
+                <BillCard />
               </ListItem>
             ))}
           </ul>
