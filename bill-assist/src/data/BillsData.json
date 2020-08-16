@@ -1,0 +1,43 @@
+{
+    
+    "1" : [
+            {"name": "Rent", "cost": 699.00}
+        ]
+    ,
+    
+    "10" : [
+            {"name" : "National Debt Collector", "cost": 50.00}
+        ]
+    ,
+    
+    "15": [
+            {"name": "Spotify Music", "cost": 5.30}
+        ]
+    ,
+
+    "22": [
+            {  "name": "Geico Car Insurance", "cost": 329.00}
+        ]
+    ,
+
+    "24": [
+            {"name" : "National Debt Collector", "cost": 50.00}
+        ]
+    ,
+    "27": [
+            { "name": "Phone Bill", "cost": 50.00}
+        ]
+    ,
+    "29" : [
+            {"name": "Netflix", "cost": 13.78}
+        ]
+    ,
+    "30" : [
+            { "name": "Geico Renters Insurance", "cost": 14.00 },
+
+            { "name": "Apple I-Cloud Storage", "cost": 2.00}
+        ]
+
+
+
+}
