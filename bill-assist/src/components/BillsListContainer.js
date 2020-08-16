@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 //Note that the array of integers should be replaced with an array of Bill Cards
 //Also note that the 0 and/or  List Header field key should be replaced with an actual header of some sort.
-export default function BillList() {
+export default function BillList( props) {
   const classes = useStyles();
 
   return (
@@ -37,9 +37,9 @@ export default function BillList() {
         <li key={`section-${0}`} className={classes.listSection}>
           <ul className={classes.ul}>
             <ListSubheader>{`Bills`}</ListSubheader>
-            {[0, 1, 2].map((item) => (
+            {props.billList.map((item) => (
               <ListItem key={`item-${0}-${item}`}>
-                <BillCard />
+                <BillCard billName={item.name} cost={item.cost}/>
               </ListItem>
             ))}
           </ul>

@@ -1,43 +1,24 @@
 {
-    
-    "1" : [
-            {"name": "Rent", "cost": 699.00}
-        ]
-    ,
-    
-    "10" : [
-            {"name" : "National Debt Collector", "cost": 50.00}
-        ]
-    ,
-    
-    "15": [
-            {"name": "Spotify Music", "cost": 5.30}
-        ]
-    ,
+    "billList":[
+        {"dueDate": 1, "name": "Rent", "cost": 699.00},
 
-    "22": [
-            {  "name": "Geico Car Insurance", "cost": 329.00}
-        ]
-    ,
+        {"dueDate": 10, "name" : "National Debt Collector", "cost": 50.00},
 
-    "24": [
-            {"name" : "National Debt Collector", "cost": 50.00}
-        ]
-    ,
-    "27": [
-            { "name": "Phone Bill", "cost": 50.00}
-        ]
-    ,
-    "29" : [
-            {"name": "Netflix", "cost": 13.78}
-        ]
-    ,
-    "30" : [
-            { "name": "Geico Renters Insurance", "cost": 14.00 },
+        {"dueDate": 15, "name": "Spotify Music", "cost": 5.30},
 
-            { "name": "Apple I-Cloud Storage", "cost": 2.00}
-        ]
+        { "dueDate": 22, "name": "Geico Car Insurance", "cost": 329.00},
 
+        {"dueDate": 24, "name" : "National Debt Collector", "cost": 50.00},
+
+        {"dueDate": 27, "name": "Phone Bill", "cost": 50.00},
+
+        {"dueDate": 29, "name": "Netflix", "cost": 13.78},
+
+        {"dueDate": 30, "name": "Geico Renters Insurance", "cost": 14.00 },
+
+        {"dueDate": 30, "name": "Apple I-Cloud Storage", "cost": 2.00}
+        
+    ]
 
 
 }

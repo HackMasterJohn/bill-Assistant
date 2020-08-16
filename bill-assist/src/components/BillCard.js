@@ -27,7 +27,7 @@ const useStyles = makeStyles({
 });
 
 //Props should be passed down to display dynamic data for this bill card component.
-export default function BillCard() {
+export default function BillCard( props ) {
   const classes = useStyles();
   //const bull = <span className={classes.bullet}>•</span>;
 
@@ -35,13 +35,13 @@ export default function BillCard() {
     <Card className={classes.root}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Bill name Here
+          {props.billName}
         </Typography>
         <Typography variant="h5" component="h2">
-          $55
+          ${props.cost}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          Date Due: Aug 2
+          Date Due: {props.dueDate}
         </Typography>
         <Typography variant="body2" component="p">
           Notes: 
