@@ -12,11 +12,11 @@ import BillCard from "./BillCard";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    maxWidth: 460,
+    maxWidth: 700,
     backgroundColor: theme.palette.background.paper,
     position: 'relative',
     overflow: 'auto',
-    maxHeight: 500,
+    maxHeight: 700,
   },
   listSection: {
     backgroundColor: 'inherit',
@@ -24,26 +24,36 @@ const useStyles = makeStyles((theme) => ({
   ul: {
     backgroundColor: 'inherit',
     padding: 0,
+    display: "flex",
+    flexDirection: "wrap"
   },
 }));
 //Note that the array of integers should be replaced with an array of Bill Cards
 //Also note that the 0 and/or  List Header field key should be replaced with an actual header of some sort.
 export default function BillList( props) {
   const classes = useStyles();
+  const billsList = props.billList;
+
+  var startDate  = props.startDate;
+  var endDate = props.endDate;
+
+console.log ("hellko");
 
   return (
-    <List className={classes.root} subheader={<li />}>
+    <List className={classes.root} >
 
-        <li key={`section-${0}`} className={classes.listSection}>
-          <ul className={classes.ul}>
+          <div >
             <ListSubheader>{`Bills`}</ListSubheader>
-            {props.billList.map((item) => (
+            
+            {billsList.filter(bill => bill.dueDate >= startDate & bill.dueDate <= endDate)
+            .map((item) => (
+            
               <ListItem key={`item-${0}-${item}`}>
-                <BillCard billName={item.name} cost={item.cost}/>
+                <BillCard billName={item.name} dueDate={item.dueDate} cost={item.cost}/>
               </ListItem>
             ))}
-          </ul>
-        </li>
+          </div>
+
 
     </List>
   );

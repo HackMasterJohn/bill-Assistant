@@ -1,5 +1,5 @@
 {
-    "billList":[
+    "billsDB":[
         {"dueDate": 1, "name": "Rent", "cost": 699.00},
 
         {"dueDate": 10, "name" : "National Debt Collector", "cost": 50.00},
