@@ -1,14 +1,9 @@
 import { createStore, combineReducers} from "redux";
-
+import { billsManager } from "./reducers"; //Imports Bill Mnager reducer to be stored in the root reducers.
 
 const reducers = {
-    //Add Bill to redux store.
 
-
-    //Delete bill from store.
-
-
-    //Edit bill from store.
+    billsManager,
 
 
 };
