@@ -10,3 +10,6 @@ Added @material-ui/pickers - Not Applicable
 
 Added date-fns - Not Applicable
     npm i date-fns
+    
+Added React Redux
+    npm install redux react-redux
